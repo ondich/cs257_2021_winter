@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: authors; Type: TABLE; Schema: public; Owner: jondich
+-- Name: authors; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.authors (
@@ -33,10 +33,8 @@ CREATE TABLE public.authors (
 );
 
 
-ALTER TABLE public.authors OWNER TO jondich;
-
 --
--- Name: books; Type: TABLE; Schema: public; Owner: jondich
+-- Name: books; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.books (
@@ -46,10 +44,8 @@ CREATE TABLE public.books (
 );
 
 
-ALTER TABLE public.books OWNER TO jondich;
-
 --
--- Name: books_authors; Type: TABLE; Schema: public; Owner: jondich
+-- Name: books_authors; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.books_authors (
@@ -58,10 +54,8 @@ CREATE TABLE public.books_authors (
 );
 
 
-ALTER TABLE public.books_authors OWNER TO jondich;
-
 --
--- Data for Name: authors; Type: TABLE DATA; Schema: public; Owner: jondich
+-- Data for Name: authors; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.authors (id, last_name, first_name, birth_year, death_year) FROM stdin;
@@ -86,7 +80,7 @@ COPY public.authors (id, last_name, first_name, birth_year, death_year) FROM std
 
 
 --
--- Data for Name: books; Type: TABLE DATA; Schema: public; Owner: jondich
+-- Data for Name: books; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.books (id, title, publication_year) FROM stdin;
@@ -125,7 +119,7 @@ COPY public.books (id, title, publication_year) FROM stdin;
 
 
 --
--- Data for Name: books_authors; Type: TABLE DATA; Schema: public; Owner: jondich
+-- Data for Name: books_authors; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.books_authors (book_id, author_id) FROM stdin;
